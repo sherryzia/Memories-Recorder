@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "851319360061",
+    "project_id": "memories-recorder-369d9",
+    "storage_bucket": "memories-recorder-369d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851319360061:android:fe03a2cc6a9cabfb1db854",
+        "android_client_info": {
+          "package_name": "com.example.memoriesrecorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFxqL5j2yNYVSpE8X9ih9OyJzyzBfhoRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

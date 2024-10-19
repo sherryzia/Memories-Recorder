@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CardView for Input Fields -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title Input -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Memory Title"
+                        android:id="@+id/inputTitle"
+                        android:ems="15"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background" />
+
+                    <!-- Description Input -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Memory Description"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:maxLines="20"
+                        android:id="@+id/inputDescription"
+                        android:gravity="top"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button to Save Memory -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Save Memory"
+        android:src="@android:drawable/ic_menu_save"
+    android:elevation="6dp" />
+</RelativeLayout>
